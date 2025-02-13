@@ -2,6 +2,7 @@
   "name": "rest-ts",
   "version": "1.0.0",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "start": "npx tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +12,7 @@
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
-    "check-lint": "eslint . --ext ts --ext tsx --ext js"
+    "check-lint": "eslint ."
   },
   "husky": {
     "hooks": {
@@ -26,15 +27,7 @@
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@types/express": "^5.0.0",
-    "@typescript-eslint/eslint-plugin": "^8.24.0",
-    "@typescript-eslint/parser": "^8.24.0",
-    "eslint": "^8.57.1",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-n": "^17.15.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-standard": "^4.1.0",
+    "eslint": "^9.20.1",
     "globals": "^15.15.0",
     "husky": "^9.1.7",
     "prettier": "3.5.0",
