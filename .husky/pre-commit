@@ -1,0 +1,28 @@
+    #!/usr/bin/env sh
+    . "$(dirname "$0")/h"
+
+    echo ' Styling, building, and testing your project before committing'
+
+    npm run check-format || (
+        echo 'Prettier check failed. Run npm run format, add changes and try commit again.';
+        false
+    )
+
+    npm run check-lint || (
+        echo 'ESLint check failed. Make the required changes listed above, add changes and try to commit again';
+        false
+    )
+
+    npm run check-types || (
+        echo 'Failed  type check. Make the changes require above, add changes and try to commit again';
+        false
+    )
+
+
+    npm run build || (
+        echo 'Your build failed, view the errors.';
+        false
+    )
+
+
+    echo 'Success Commite'
