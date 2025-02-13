@@ -13,12 +13,11 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npx pretty-quick --staged ng lint ng test",
-      "pre-push":"ng build --aot true"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx pretty-quick --staged ng lint ng test",
+      "pre-push": "ng build --aot true"
     }
-
   },
   "keywords": [],
   "author": "",
@@ -32,6 +31,7 @@
     "eslint": "^8.57.1",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^17.15.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-standard": "^4.1.0",
